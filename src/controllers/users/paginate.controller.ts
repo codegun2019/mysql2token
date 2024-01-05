@@ -15,6 +15,6 @@ export class PaginateController {
   async paginate(@Query() dto: PaginateDto) {
     const user = await this.usersService.paginate(dto);
 
-    return ApiResource.successResponse(user)
+    return ApiResource.successResponse(user);
   }
 }

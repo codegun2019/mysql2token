@@ -1,15 +1,15 @@
-import { CreateUserController } from './create.controller';
 import { DeleteUserController } from './delete.controller';
 import { PaginateController } from './paginate.controller';
 import { ShowController } from './show.controller';
+import { CreateController } from './create.controller';
 import { UpdateController } from './update.controller';
 
-const UserControllers = [
+const CustomerControllers = [
   ShowController,
   PaginateController,
-  CreateUserController,
   DeleteUserController,
+  CreateController,
   UpdateController,
 ];
 
-export default UserControllers;
+export default CustomerControllers;
